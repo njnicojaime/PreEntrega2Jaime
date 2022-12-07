@@ -1,0 +1,174 @@
+
+[
+    {
+        "id": 1,
+        "idCategoria": "vinos",
+        "nombre": "Aime", 
+        "tipo": "Tinto",       
+        "categoria": "Cabernet Sauvignon",
+        "precio": 2200,
+        "stock": 30,
+        "img": "vino1.png"
+    },
+    {
+        "id": 2,
+        "idCategoria": "vinos",
+        "nombre": "Altos de Plata",
+        "tipo": "Tinto",          
+        "categoria": "Malbec",
+        "precio": 2000,
+        "stock": 30,
+        "img": "vino3.png"
+    },
+    {
+        "id": 3,
+        "idCategoria": "vinos",
+        "nombre": "Alma 4", 
+        "tipo": "Tinto",         
+        "categoria": "Cabernet Sauvignon",
+        "precio": 2500,
+        "stock": 30,
+        "img": "vino4.png"
+    },
+    {
+        "id": 4,
+        "idCategoria": "vinos",
+        "nombre": "Benjamin Nieto",   
+        "tipo": "Tinto",       
+        "categoria": "Malbec",
+        "precio": 2500,
+        "stock": 30,
+        "img": "vino5.png"
+    },
+    {
+        "id": 5,
+        "idCategoria": "vinos",
+        "nombre": "Altos de Plata", 
+        "tipo": "Chardonay",         
+        "categoria": "Chardonay",
+        "precio": 2500,
+        "stock": 30,
+        "img": "vino6.png"
+    },
+    {
+        "id": 6,
+        "idCategoria": "vinos",
+        "nombre": "Alambrado",  
+        "tipo": "Chardonay",        
+        "categoria": "Chardonay",
+        "precio": 2500,
+        "stock": 30,
+        "img": "vino7.png"
+    },
+    {
+        "id": 7,
+        "idCategoria": "vinos",
+        "nombre": "Alambrado", 
+        "tipo": "Tinto",         
+        "categoria": "Cabernet Sauvignon",
+        "precio": 2500,
+        "stock": 30,
+        "img": "vino2.png"
+    },
+    {
+        "id": 8,
+        "idCategoria": "destilados",
+        "nombre": "Alambrado", 
+        "tipo": "Tinto",         
+        "categoria": "Cabernet Sauvignon",
+        "precio": 2500,
+        "stock": 30,
+        "img": "destilados1.png"
+    },
+    {
+        "id": 9,
+        "idCategoria": "destilados",
+        "nombre": "Alambrado", 
+        "tipo": "Tinto",         
+        "categoria": "Cabernet Sauvignon",
+        "precio": 2500,
+        "stock": 30,
+        "img": "destilados2.png"
+    },
+    {
+        "id": 10,
+        "idCategoria": "destilados",
+        "nombre": "Aperol",  
+        "tipo": "Tinto",        
+        "categoria": "Cabernet Sauvignon",
+        "precio": 2500,
+        "stock": 30,
+        "img": "destilados3.png"
+    },
+    {
+        "id": 11,
+        "idCategoria": "destilados",
+        "nombre": "Ballantines",    
+        "tipo": "Whisky",      
+        "categoria": "Whisky",
+        "precio": 2500,
+        "stock": 30,
+        "img": "destilados4.png"
+    },
+    {
+        "id": 12,
+        "idCategoria": "destilados",
+        "nombre": "Beefeater",  
+        "tipo": "Gin",        
+        "categoria": "Gin",
+        "precio": 2500,
+        "stock": 30,
+        "img": "destilados5.png"
+    },
+    {
+        "id": 13,
+        "idCategoria": "destilados",
+        "nombre": "Bulldog",  
+        "tipo": "Gin",        
+        "categoria": "Gin",
+        "precio": 2500,
+        "stock": 30,
+        "img": "destilados6.png"
+    },
+    {
+        "id": 14,
+        "idCategoria": "cervezas",
+        "nombre": "Imperial Golden",  
+        "tipo": "Imperial",        
+        "categoria": "Cervezas",
+        "precio": 2500,
+        "stock": 30,
+        "img": "cervezas1.png"
+    },
+    {
+        "id": 15,
+        "idCategoria": "cervezas",
+        "nombre": "Imperial IPA",  
+        "tipo": "Imperial",        
+        "categoria": "Cervezas",
+        "precio": 2500,
+        "stock": 30,
+        "img": "cervezas2.png"
+    },
+    {
+        "id": 16,
+        "idCategoria": "cervezas",
+        "nombre": "Imperial Lager",  
+        "tipo": "Imperial",        
+        "categoria": "Cervezas",
+        "precio": 2500,
+        "stock": 30,
+        "img": "cervezas4.png"
+    },
+    {
+        "id": 17,
+        "idCategoria": "cervezas",
+        "nombre": "Imperial Stout",  
+        "tipo": "Imperial",        
+        "categoria": "Cervezas",
+        "precio": 2500,
+        "stock": 30,
+        "img": "cervezas5.png"
+    }
+
+]
