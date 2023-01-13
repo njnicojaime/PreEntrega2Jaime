@@ -12,6 +12,10 @@ nav{
    
 }
 
+.nav-item {
+    margin: 10px;
+}
+
 .dropdown-item a {
     text-decoration: none;    
      color: #772953;
@@ -28,7 +32,7 @@ nav{
 
 li .nav-link{        
     color: white;
-    opacity: 100%;
+    opacity: 100%;       
     
 }
 
@@ -43,54 +47,28 @@ li .nav-link:hover{
 
 
 
-.btnCarrito {
-    border: none;
-    color: white;
-    font-size: 22px;    
-     background-color:#772953 ;     
-    padding: 10px 15px;
-    transition: all .3s;
-    opacity: 85%;
-    
-}
-
-.btnCarrito:hover {
-    cursor: pointer;
-    opacity: 100%;
-}
-
 
 /* Cards */
-
-.row{
-    margin: 2rem;
-}
-
 
 .cardItem{
     margin: 1rem;
     align-items: center;    
-    margin-bottom: 3rem;    
-    box-shadow: #ffffff;
+    margin-bottom: 1rem;       
 }
 
+.cardProducto {
+    width: 18rem;
+    margin: 4px;
+    background-color: hsl(0, 0%, 97%);
+}
 
 .cardBody {
     background-color: rgb(255, 255, 255);
     margin-bottom: 3px;
-    text-align: center;
+    text-align: center;    
     border-radius: 1rem;
 }
 
-.cartWidget {
-    position: relative;    
-    color:white;
-}
-
-.cantCarrito {
-    position: relative;
-    left: 13%;
-}
 
 .card-text{
     color: black; 
@@ -103,6 +81,78 @@ li .nav-link:hover{
     font-weight: bold;
     color: black;
     font-family: sans-serif;    
+}
+
+.imgBody {
+    display:block;
+    margin:auto;
+    max-height: 100%;
+}
+
+/* Cart */
+
+.cartContainer {
+    margin-top: 3%;
+    margin-left: 26.5%;
+    padding-left: 50%;
+}
+
+.cardCart{     
+    margin-bottom: 3px;
+    align-content: center ;    
+    border-radius: 1rem;    
+}
+
+.btnCart{    
+    margin-left: 30px;
+}
+
+
+/* Checkout */
+
+.pCheckout{
+    font-weight: bold;
+    color: red;
+    font-family: sans-serif;
+    font-size: 11px;
+    
+}
+
+.form-label{
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+/* CardWidet */
+
+.cartWidget {    
+    margin-right: 20px;
+    color:white;
+}
+
+.cantCarrito {
+    position: relative;
+    left: 13%;
+}
+
+
+/* DarkMode */
+
+.darkMode {
+    background-color:black;
+    color:gainsboro;
+}
+
+.cardBodyDark {
+    background-color: hsl(0, 0%, 33%);
+    margin-bottom: 3px;
+    text-align: center;
+}
+
+
+.btnFinalizar{
+    padding: 5%;
 }
 
 .btn-info{
@@ -119,8 +169,15 @@ li .nav-link:hover{
     align-items: center;
 }
 
-.bodyCard{
-    height: 270px;
-       
+
+
+@media (max-width:991px) {
+    .cartWidget {
+        color:white;
+        margin-bottom: 10px;
+    }
 }
 
+.--bs-btn-disabled-opacity{
+    opacity: 100%;
+}

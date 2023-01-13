@@ -1,16 +1,24 @@
 import { Link } from "react-router-dom";
+import { useCarritoContext } from "../../context/CarritoContext";
+import { useDarkModeContext } from "../../context/DarkModeContext";
+const CartWidget = () => {
 
-const Cartwidget = () => {
+    const {darkMode} = useDarkModeContext()
+    const {getItemQuantity} = useCarritoContext()
+
     return (
-        <ul className="navbar-nav me-auto">
-             <Link to={'/cart'} className="nav-link"><li className="nav-link">                 
-                <button className="btnCarrito fas fa-shopping-cart"><span id="contadorCarrito">0</span></button>
-            </li> 
-            </Link>
-        </ul>
-       
-        
+        <>  
+             <button className={`btn ${darkMode ? 'cartWidget' : 'btn-dark'}`}>
+            
+                    <Link to={'/cart'} className="nav-link">
+                        <i className="fas fa-shopping-cart fa-lg"></i>
+                        {getItemQuantity() > 0 && <span className="cantCarrito">{getItemQuantity()}</span>}
+                    </Link>
+                        
+            </button>
+            
+        </>
     );
 }
 
-export default Cartwidget;
+export default CartWidget;

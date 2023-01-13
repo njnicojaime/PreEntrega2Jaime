@@ -1,27 +1,36 @@
 import ItemCount from "../ItemCount/ItemCount";
-
+import { Link } from "react-router-dom";
+import { useDarkModeContext } from "../../context/DarkModeContext";
+import { useCarritoContext } from "../../context/CarritoContext";
 
 const ItemDetail = ({item}) => {
-    console.log(item)
+    const {darkMode} = useDarkModeContext()
+    const {addItem} = useCarritoContext()
+    
+    const onAdd = (contador) => {
+        addItem(item, contador)
+    }   
 
     return (
-        <div className="row g-0">
-            <div className="col-md-4">
-                <img src={`../images/${item.img}`} alt="" className="img-fluid rounded-start"/>
+        <div className="row g-0 ">
+            <div className="col-md-4 imgBody"  >
+                <img src={item.img} alt="" className="img-fluid rounded-start"/>
             </div>
-            <div className="col-md-8">
-                <div className="card-body bodyCard">
+            <div className="col-md-8" >
+                <div className="card-body ">
                     <h5 className="card-title">{item.nombre}</h5>
                     <p className="card-text">Tipo: {item.categoria} </p>
                     <p className="card-text">Marca: {item.nombre} </p>
                     <p className="card-text">Precio: $ {new Intl.NumberFormat('de-DE').format(item.precio)} </p>
                     <p className="card-text">Stock: {item.stock} </p>
-                    <ItemCount stock= {item.stock}/> <br/>
-                    <button className="btn btn-success"> Finalizar compra</button>
-                </div>             
-            </div>            
+                    <ItemCount inicial = {1} stock= {item.stock} onAdd={onAdd}/><br/>
+                    <button className={`btn ${darkMode ? 'btn-dark' : 'btn-dark'}`}><Link to="/cart" className="nav-link">Finalizar compra</Link></button>
+                </div>
+                
+            </div>
+            
         </div>
     );
 }
 
-export default ItemDetail;
+export default ItemDetail; 
